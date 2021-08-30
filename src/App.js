@@ -9,7 +9,7 @@ function App() {
   const [movies,setMovies] =useState([]);
 
   const API = {
-    base:'http://www.omdbapi.com/?apikey=1468b66e&t=movie&s=',
+    base:'https://www.omdbapi.com/?apikey=1468b66e&t=movie&s=',
     key:''
   }
 
