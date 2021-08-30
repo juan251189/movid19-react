@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/movid19-react/static/css/main.bf5f3950.chunk.css",
+    "main.js": "/movid19-react/static/js/main.6109d70e.chunk.js",
+    "main.js.map": "/movid19-react/static/js/main.6109d70e.chunk.js.map",
+    "runtime-main.js": "/movid19-react/static/js/runtime-main.2e28d0f8.js",
+    "runtime-main.js.map": "/movid19-react/static/js/runtime-main.2e28d0f8.js.map",
+    "static/js/2.d1d2e804.chunk.js": "/movid19-react/static/js/2.d1d2e804.chunk.js",
+    "static/js/2.d1d2e804.chunk.js.map": "/movid19-react/static/js/2.d1d2e804.chunk.js.map",
+    "static/js/3.c4940ced.chunk.js": "/movid19-react/static/js/3.c4940ced.chunk.js",
+    "static/js/3.c4940ced.chunk.js.map": "/movid19-react/static/js/3.c4940ced.chunk.js.map",
+    "index.html": "/movid19-react/index.html",
+    "static/css/main.bf5f3950.chunk.css.map": "/movid19-react/static/css/main.bf5f3950.chunk.css.map",
+    "static/js/2.d1d2e804.chunk.js.LICENSE.txt": "/movid19-react/static/js/2.d1d2e804.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e28d0f8.js",
+    "static/js/2.d1d2e804.chunk.js",
+    "static/css/main.bf5f3950.chunk.css",
+    "static/js/main.6109d70e.chunk.js"
+  ]
+}
