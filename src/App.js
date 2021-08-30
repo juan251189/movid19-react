@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {useState} from 'react';
+import SearchBar from './components/SearchBar';
+import ListMovies from './components/ListMovies';
 
 function App() {
+
+  const [movies,setMovies] =useState([]);
+
+  const API = {
+    base:'http://www.omdbapi.com/?apikey=1468b66e&t=movie&s=',
+    key:''
+  }
+
+  const fetchmovies = (query) =>{
+    console.log(query);
+    let url= `${API.base}${query}`;
+
+      fetch(url)
+      .then(response =>{
+        //console.log(response);
+        return response.json();
+      }).then (data =>{
+        if(data.Error){
+          // setMovies({});
+          console.log(Error);
+        }
+        else{
+          console.log(data);
+          setMovies(data.Search);
+        }
+      })
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <SearchBar fetchmovies={fetchmovies}/>
+        <ListMovies movies={movies}/>
     </div>
   );
 }

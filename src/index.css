@@ -5,9 +5,85 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+
+
+.movie{
+  margin-top: 15px;
+  transition: all .5;
+}
+.movie :hover{
+  opacity: 0.8;
+
+}
+
+.movie p{
+  text-align: center;
+  z-index: 2;
+
+}
+
+.movie-poster{
+  position:relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow:1px 15px rgb(17, 17, 16);
+
+}
+
+.movie-poster .movie-title{
+  z-index: 1;
+}
+
+.movie-poster
+.img-thumbnail  {
+  padding: 0!important;
+  border:none!important;
+  max-width: 250px;
+ max-height: 320px;
+ margin:15px;
+
+  background-position: center;
+  background-size: cover;
+  transition: all .4s;
+  z-index:1;
+
+}
+.img-thumbnail::before {
+  content: "";
+display: none;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgba(52, 73, 94, 0.75);
+}
+
+.movie-poster:hover .img-thumbnail,
+.movie-poster:focus .img-thumbnail,
+.movie-poster:hover .movie-poster
+{
+  transform: scale(1.2);
+
+}
+
+
+
+
+.movie ul>li{
+  color:white;
+ list-style: none;
+ display:inline-block;
+ padding-right: 10px;
+
 }
